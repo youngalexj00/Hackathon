@@ -3,6 +3,9 @@ let jQueryScript = document.createElement("script");
 jQueryScript.setAttribute("src", "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js");
 head.appendChild(jQueryScript);
 
+$(document).ready(function () {
+});
+
 let googleLogo = document.getElementById('hplogo');
 // parent id is 'lga'
 let parent = googleLogo.parentNode.id;
@@ -20,9 +23,4 @@ function quotes() {
     alert(quotesArr[random]);
 }
 
-//setInterval(quotes, 5000);
-
-//change the background color to be pink
-
-// let body = document.querySelector('body');
-// body.setAttribute("style", "background:	#FFB6C1")
+$("body").css({ backround: black });
