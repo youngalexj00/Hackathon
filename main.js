@@ -1,3 +1,8 @@
+let head = document.querySelector("head");
+let jQueryScript = document.createElement("script");
+jQueryScript.setAttribute("src", "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js");
+head.appendChild(jQueryScript);
+
 let googleLogo = document.getElementById('hplogo');
 // parent id is 'lga'
 let parent = googleLogo.parentNode.id;
@@ -10,9 +15,14 @@ parentElement.appendChild(img);
 
 
 function quotes() {
-  let quotesArr = ['If you want to achieve greatness stop asking for permission." --Anonymous', '"Things work out best for those who make the best of how things work out." --John Wooden']
-  let random = Math.floor(Math.random() * quotesArr.length);
-  alert(quotesArr[random]);
+    let quotesArr = ['If you want to achieve greatness stop asking for permission." --Anonymous', '"Things work out best for those who make the best of how things work out." --John Wooden']
+    let random = Math.floor(Math.random() * quotesArr.length);
+    alert(quotesArr[random]);
 }
- 
-setInterval(quotes, 5000);
+
+//setInterval(quotes, 5000);
+
+//change the background color to be pink
+
+// let body = document.querySelector('body');
+// body.setAttribute("style", "background:	#FFB6C1")
